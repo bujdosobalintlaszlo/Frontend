@@ -1,0 +1,18 @@
+childrenes ize: 
+{
+      path: '/dashboard',
+      name:'dashboard', 
+      component: DashboardLayout,
+      children:[
+        {
+        path:'/users',
+        name:'users',
+        component:UserListView
+        },
+        {
+          path:'/users/:userId/edit',
+          name:'users_edit',
+          component:UserEdit
+          }
+      ]
+    },
